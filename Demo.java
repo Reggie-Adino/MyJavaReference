@@ -1,8 +1,27 @@
+
+
 class Student {
     int rollno;
     String name;
     int marks;
 }
+
+class Data {
+    private String name = "Adino";
+    private int age = 19; 
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+/**
+ * Demo
+ */
 
 public class Demo {
     public static void main (String[] args) {
@@ -35,5 +54,9 @@ public class Demo {
         for(Student stud : students) {
             System.out.println(stud.name + " : " + stud.marks);
         }
+
+        Data data = new Data();
+       int x = data.getAge();
+       System.out.println(x);
     }
 }
